@@ -67,7 +67,7 @@ public class MapExercise {
        for(int l=0;l<message.length();l++)
        {
            character=message.charAt(l);
-           if(character==' ' || character=='.' || character==',' || character==';')
+           if(!(Character.isLetterOrDigit(character))  && character!='\'')
            {
                wordsCount++;
            }
